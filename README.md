@@ -1,3 +1,2 @@
-# Strapi application
+# Toto Strapi
 
-A quick description of your strapi application
