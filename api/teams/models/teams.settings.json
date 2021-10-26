@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "teams",
+  "info": {
+    "name": "Teams",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "home_matches": {
+      "collection": "matches",
+      "via": "home_team"
+    },
+    "away_matches": {
+      "collection": "matches",
+      "via": "away_team"
+    }
+  }
+}
